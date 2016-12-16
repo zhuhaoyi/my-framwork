@@ -19,5 +19,5 @@
         "illuminate/database": "^5.3",
         "illuminate/events": "^5.3"
     }
-    ,"minimum-stability": "dev"
+
 }
