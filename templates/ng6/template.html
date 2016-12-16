@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>索股</title>
+    <script type="text/javascript" src="template/ng6/js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="template/ng6/css/style.css"/>
+
+</head>
+
+<body>
+<!---alert--->
+<?php if (isset($_GET['p'])) { ?>
+<div id="big-bag"></div>
+<div id="alert">
+    <img src="template/ng6/img/alert.png" alt=""/>
+    <a href="<?php echo str_replace('index.php/','',$_SERVER['PHP_SELF']); ?>"><img src="template/ng6/img/001.png"
+                                                                                    class="alert-img1 off"/></a>
+    <a href="<?php echo str_replace('index.php/','',$_SERVER['PHP_SELF']); ?>"><img src="template/ng6/img/002.png"
+                                                                                    class="alert-img2 off"/></a>
+</div>
+
+<?php } ?>
+
+
+<div id="container">
+    <div class="header">
+        <img src="template/ng6/img/1.png"/>
+    </div>
+    <div class="main max">
+        <img src="template/ng6/img/3.png"/>
+    </div>
+    <div class="content max">
+        <img src="template/ng6/img/4.png"/>
+    </div>
+    <div class="joinus max">
+        <img src="template/ng6/img/5_01.png" alt=""/>
+
+        <form class="form1" action="action.php" method="post" onsubmit="return check()">
+            <input type="text" name="mobile" class="input1" placeholder="请输入接收信息的手机号码"/>
+            <input name="laiurl" type="hidden" value="<?php echo $laiyuan1; ?>">
+            <input name="users" type="hidden" id="txb_stock" class="stock" value="无股票代码">
+            <input type="submit" class="btn1"/>
+            <img src="template/ng6/img/6.png" class="btn-bag"/>
+        </form>
+
+        <div class="scroll">
+            <img src="template/ng6/img/006.png" alt=""/>
+
+            <div class="demo1">
+                <ul class="mulitline">
+                    <li>185****3471&nbsp;恭喜您成功参与免费获取活动
+                    <li>135****8979&nbsp;恭喜您成功参与免费获取活动
+                    <li>189****7951&nbsp;恭喜您成功参与免费获取活动
+                    <li>132****8610&nbsp;恭喜您成功参与免费获取活动
+                    <li>155****2689&nbsp;恭喜您成功参与免费获取活动
+                    <li>158****6789&nbsp;恭喜您成功参与免费获取活动
+                    <li>155****3289&nbsp;恭喜您成功参与免费获取活动
+                    <li>131****6421&nbsp;恭喜您成功参与免费获取活动
+                    <li>180****6785&nbsp;恭喜您成功参与免费获取活动
+                    <li>189****8225&nbsp;恭喜您成功参与免费获取活动
+                    <li>159****3185&nbsp;恭喜您成功参与免费获取活动
+                    <li>138****0520&nbsp;恭喜您成功参与免费获取活动
+                    <li>132****8566&nbsp;恭喜您成功参与免费获取活动
+                    <li>186****0776&nbsp;恭喜您成功参与免费获取活动
+                    <li>155****1213&nbsp;恭喜您成功参与免费获取活动
+                </ul>
+            </div>
+        </div>
+        <div class="content-img"><img src="template/ng6/img/003.png" alt=""/></div>
+        <div class="gonen">
+            <div id="adv">
+                <a id="prev"><img src="template/ng6/img/prev.png"/></a>
+                <a id="next"><img src="template/ng6/img/next.png"/></a>
+                <ul id="adv1">
+                    <li class="adv_li"><a href="#"><img src="template/ng6/img/01.png"/></a></li>
+                    <li class="adv_li"><a href="#"><img src="template/ng6/img/02.png"/></a></li>
+                    <li class="adv_li"><a href="#"><img src="template/ng6/img/03.png"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bot">
+        <img src="template/ng6/img/bot.png" alt=""/>
+    </div>
+    <!--统计代码-->
+    <div style="display:none">
+        <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259813167'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259813167%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+            $('cnzz_protocol').hide();
+
+        </script>
+    </div>
+
+    <script>
+        window.onload = function () {
+            move(4000);
+        }
+    </script>
+    <script type="text/javascript" src="template/ng6/js/js.js"></script>
+
+    <script type="text/javascript" src="js/lanrenzhijia.js"></script>
+    <script type="text/javascript">
+        //表单提交时解除绑定事件
+        $('form').submit(function () {
+            $(window).unbind('beforeunload');
+        });
+        //表单提交成功后解除绑定事件
+        $('a').click(function () {
+            $(window).unbind('beforeunload');
+        });
+        //关闭窗口和刷新是弹出提示
+        $(window).bind('beforeunload', function () {
+            return '系统检测到您要离开此页面！';
+        });
+    </script>
+    <!--根据配置加载微信-->
+    <?php if($weixin){ ?>
+    <script type="text/javascript">
+        var default_view = 1; <!--1是默认展开，0是默认关闭，新开窗口看效果，别在原页面刷新-->
+    </script>
+    <script type="text/javascript" src="template/public/weixin/etc/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="template/public/weixin/etc/css.css"/>
+    <div id="online_service_bar">
+        <div id="online_service_minibar"></div>
+        <div id="online_service_fullbar">
+            <div class="service_bar_head"><span id="service_bar_close" title="点击关闭"></span></div>
+            <div class="service_bar_main"
+                 style="background: url(template/public/weixin/<?php echo $weixin;?>.png) no-repeat left top; height: 100px;">
+                <img src="template/public/weixin/etc/x.png"
+                     style="position:absolute; right: -14px;top: 23px; width: 50px;height: 50px;">
+            </div>
+        </div>
+    </div>
+    <?php }?>
+
+</body>
+</html>

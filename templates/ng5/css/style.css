@@ -1,0 +1,197 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #aa0e0f;
+}
+.banner{
+	widows: 1358px;
+	margin: 0 auto;
+
+}
+
+
+.img1{
+	width: 100%;
+
+}
+.main{
+	position: relative;
+	width: 100%;
+
+
+}
+.img2{
+	position:relative;
+	width: 100%;
+	margin-top: -6px;
+
+}
+.img3{
+	position: absolute;
+	bottom:22%;
+	width: 650px;
+	margin-left: 2%;
+
+}
+.img4{
+	position: absolute;
+	bottom:22%;
+	width: 650px;
+	left: 52%;
+}
+.form1{
+	position: absolute;
+	width: 1000px;
+	height: 88px;
+	left: 64%;
+	bottom:17%;
+	margin-left: -500px;
+}
+.inpu1{
+	width: 380px;
+	height: 45px;
+	float: left;
+	font-size: 30px;
+	border:2px solid red;
+	margin-top: 4px;
+}
+.btn_img{
+	float: left;
+	/* width: 360px; */
+	height: 50px;
+	margin-left: 10px;
+}
+.btn {
+	position: absolute;
+	float: left;
+	width: 228px;
+	height: 48px;
+	margin-left: 34px;
+	right: 37%;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+	cursor: pointer
+}
+.scroll{
+	position: absolute;
+	width: 627px;
+	height: 40px;
+	left: 64%;
+	margin-left: -500px;
+	bottom: 16%;
+	border: 1px solid red;
+	background: #ffd5ac;
+}
+.img5{
+	width: 160px;
+	height: 29px;
+	margin-top: 1%;
+	margin-left: 2%;
+}
+.demo1{
+	position: absolute;
+	width: 800px;
+	height: 30px;
+	margin-left: 8%;
+	right: -65%;
+	top: 22%;
+}
+#big_bag {
+	width: 100%;
+	height: 120%;
+	position: fixed;
+	background: #000;
+	z-index: 500;
+	opacity: 0.5;
+	/*display: none;*/
+}
+
+#alert {
+	left: 50%;
+	position: fixed;
+	z-index: 800;
+	margin: 0 auto;
+	margin-left: -206px;
+	top: 45%;
+	/*display: none;*/
+}
+.alert_img2 {
+	position: absolute;
+	left: 31%;
+	bottom: 6%;
+	cursor: pointer;
+}
+
+.alert_img3 {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	cursor: pointer;
+}
+.mulitline{
+	font-size: 20px;
+	height: 25px;
+	overflow: hidden;
+}
+.txt{
+	position: absolute;
+	bottom:6%;
+	left: 35%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 29px;
+
+}
+h1{
+	text-align: center;
+}
+span{
+	color: red;
+}
+.tab{
+	position: absolute;
+	bottom:1%;
+	left: 50%;
+	margin-left: -384px;
+}
+table{
+	width: 950px;
+	height: 200px;
+	margin: 0 auto;
+	border:2px solid #ac0e0f;
+	margin-top:25px;
+	background: #fff;
+}
+
+
+.img6{
+	width: 80%;
+}
+.img7{
+	width: 100%;
+}
+.footer{
+	width: 100%;
+	position: absolute;
+	margin-top: -13px;
+}
+@media screen and (max-width: 1024px) {
+	.form1{
+		left: 68%;
+		bottom: 16%;
+	}
+	.scroll{
+		left: 66%;
+		bottom: 14%;
+	}
+	.tab{
+		left: 65%;
+		bottom: 1%;
+	}
+	.img6{
+		width: 79%;
+	}
+
+}

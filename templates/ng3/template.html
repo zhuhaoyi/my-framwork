@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title><?php echo $title; ?></title>
+    <link rel="stylesheet" href="template/ng3/css/style.css"/>
+    <script src="template/ng3/js/jquery-1.8.3.min.js"></script>
+    <script src="template/ng3/js/adv_plugin.js"></script>
+    <script>
+        window.onload=function(){
+            move(4000);
+        }
+    </script>
+</head>
+<body>
+
+
+<?php if (isset($_GET['p'])) { ?>
+<div id="alert1"></div>
+<div id="alert">
+    <img src="template/ng3/images/sgym-tckbj.png" class="alert_img1"/>
+    <a href="<?php echo str_replace('index.php/','',$_SERVER['PHP_SELF']); ?>"><img src="template/ng3/images/sgym-an.png" class="alert_img2"/></a>
+    <a href="<?php echo str_replace('index.php/','',$_SERVER['PHP_SELF']); ?>"><img src="template/ng3/images/sgym-X.png" class="alert_img3"/></a>
+</div>
+<div id="big_bag">
+
+</div>
+<?php } ?>
+<div id="baner">
+
+
+        <div id="top_img">
+            <img src="template/ng3/images/ximg_01.png" class="topimg"/>
+            <img src="template/ng3/images/logo_03.png" class="logo">
+        </div>
+        <div class="cencer_img">
+            <img src="template/ng3/images/img5555_03.png" class="img1"/>
+            <form  action="action.php" method="post" onsubmit="return check()" class="form_1">
+                <input type="text" name="mobile" placeholder="请输入接收信息的手机号码" class="input_1"/>
+                <input name="laiurl" type="hidden" value="<?php echo $laiyuan1; ?>">
+                <input name="users" type="hidden" id="txb_stock" class="stock" value="无股票代码">
+                <img src="template/ng3/images/img20_04.png" class="btn_img1"/>
+                <input type="submit" class="btn1 btn_1"/>
+            </form>
+            <p class="txt_1">(为保证不影响主力节奏 每日免费索取牛股天机星名额仅限200名！)</p>
+            <div class="iponhe">
+                <img src="template/ng3/images/img6_08.png" class="img_4"/>
+                <div class="demo1">
+                    <ul  class="mulitline">
+                        <li>185****3471&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>135****8979&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>189****7951&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>132****8610&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>155****2689&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>158****6789&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>155****3289&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>131****6421&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>180****6785&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>189****8225&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>159****3185&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>138****0520&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>132****8566&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>186****0776&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                        <li>155****1213&nbsp;&nbsp;&nbsp;恭喜您成功参与
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    <div class="img7"><img src="template/ng3/images/img67_03.png" alt=""/></div>
+
+    <div class="lup">
+
+        <div id="adv">
+            <a id="prev"><img src="template/ng3/images/left.png" class="img11"/></a>
+            <a id="next"><img src="template/ng3/images/right.png" class="img11"/></a>
+            <ul id="adv1">
+                <li class="adv_li"><a href="#"><img src="template/ng3/images/lp1.png" class="img10"/></a></li>
+                <li class="adv_li"><a href="#"><img src="template/ng3/images/lp2.png" class="img10"/></a></li>
+                <li class="adv_li"><a href="#"><img src="template/ng3/images/lp3.png" class="img10"/></a></li>
+            </ul>
+        </div>
+        <div class="right_img">
+            <img src="template/ng3/images/2.png" class="img8  img_style" style="border:1px solid red; box-shadow:0 0 5px #000"/>
+            <img src="template/ng3/images/1.png" class="img6  img_style"/>
+            <img src="template/ng3/images/555.png" class="img9  img_style"/>
+        </div>
+    </div>
+    <div class="bot">
+        <form  action="action.php" method="post" onsubmit="return check()" class="form_2">
+            <input  name="mobile" type="text"placeholder="输入预约的手机号码" class="input_2"/>
+            <input name="laiurl" type="hidden" value="<?php echo $laiyuan1; ?>">
+            <input name="users" type="hidden" id="txb_stock" class="stock" value="无股票代码">
+            <img src="template/ng3/images/btn_img2_03.png" class="btn_img2"/>
+            <input type="submit" class="btn2 btn_1"/>
+        </form>
+    </div>
+    <img src="template/ng3/images/img666.png" alt="" style="width:100%;"/>
+        
+    
+        <!--<script>
+            window.onload=function(){
+                move(2000);
+            }
+        </script-->
+        <!--<div id="online_service_bar">
+            <div id="online_service_minibar"></div>
+            <div id="online_service_fullbar">
+                <div class="service_bar_head"><span id="service_bar_close" title="点击关闭">点击关闭</span></div>
+                <div class="service_bar_main">
+                    <ul class="service_menu">
+                        <li class="hover">
+                            <dl>
+                                <dd>
+                                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=503243646&site=qq&menu=yes"><img width="74" height="22" border="0" src="http://wpa.qq.com/pa?p=2:503243646:41" alt="http://www.lanrenzhijia.com/" title="武汉国诚在线客服" /></a>
+                                    <p style="margin:10px 0 5px 0;">投顾业务咨询电话<br />13476253812</p>
+                                    <p style="margin-bottom:5px;">投顾服务投诉电话<br />13554132205</p>
+                                    <p>24小时服务电话<br />13720238227</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div-->
+
+    <script>
+        function check() {
+            if ($("#mobile").val() == ''){
+                alert('手机号码不能为空！');
+                return false;
+            }
+        }
+        $(function () {
+            //多行应用
+            var _wrap = $('ul.mulitline'); //定义滚动区域
+            var _interval = 3000; //定义滚动间隙时间
+            var _moving; //需要清除的动画
+            _wrap.hover(function () {
+                clearInterval(_moving); //当鼠标在滚动区域中时,停止滚动
+            }, function () {
+                _moving = setInterval(function () {
+                    var _field = _wrap.find('li:first'); //此变量不可放置于函数起始处，li:first取值是变化的
+                    var _h = _field.height(); //取得每次滚动高度
+                    _field.animate({ marginTop: -_h + 'px' }, 600, function () {//通过取负margin值，隐藏第一行
+                        _field.css('marginTop', 0).appendTo(_wrap); //隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                    })
+                }, _interval)//滚动间隔时间取决于_interval
+            }).trigger('mouseleave'); //函数载入时，模拟执行mouseleave，即自动滚动
+
+        });
+
+        /**********/
+        $(".btn_1").click(function(){
+            $("#alert").css("display","block");
+            $("#big_bag").css("display","block");
+        });
+        $(".alert_img2").click(function(){
+            $("#alert").css("display","none");
+            $("#big_bag").css("display","none");
+        });
+        $(".alert_img3").click(function(){
+            $("#alert").css("display","none");
+            $("#big_bag").css("display","none");
+        });
+
+    </script>
+    <div style="display:none">
+        <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259813167'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259813167%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+            $('cnzz_protocol').hide();
+
+        </script>
+        </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        var default_view = 1; <!--1是默认展开，0是默认关闭，新开窗口看效果，别在原页面刷新-->
+    </script>
+    <script type="text/javascript" src="js/lanrenzhijia.js"></script>
+    <script type="text/javascript">
+        //表单提交时解除绑定事件
+        $('form').submit(function(){
+            $(window).unbind('beforeunload');
+        });
+        //表单提交成功后解除绑定事件
+        $('a').click(function(){
+            $(window).unbind('beforeunload');
+        });
+        //关闭窗口和刷新是弹出提示
+        $(window).bind('beforeunload',function(){
+            return '系统检测到您要离开此页面！';
+        });
+    </script>
+
+    <!--根据配置加载微信-->
+    <?php if($weixin){ ?>
+    <script type="text/javascript" src="template/public/weixin/etc/js.js"></script>
+    <link rel="stylesheet" type="text/css" href="template/public/weixin/etc/css.css"/>
+    <div id="online_service_bar">
+        <div id="online_service_minibar"></div>
+        <div id="online_service_fullbar">
+            <div class="service_bar_head"><span id="service_bar_close" title="点击关闭"></span></div>
+            <div class="service_bar_main"
+                 style="background: url(template/public/weixin/<?php echo $weixin; ?>.png) no-repeat left top; height: 100px;">
+                <img src="template/public/weixin/etc/x.png" style="position:absolute; right: -14px;top: 23px; width: 50px;height: 50px;">
+            </div>
+        </div>
+    </div>
+    <?php }?>
+</body>
+</html>

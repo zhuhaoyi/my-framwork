@@ -1,0 +1,284 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ ul li {
+     list-style-type:none;
+ }
+ 
+ #alert1{
+     width: 100%;
+     height: 100%;
+     position:fixed;
+     background: #000;
+     z-index: 500;
+    opacity:0.5;
+
+ }
+
+
+
+.logo{
+    position: absolute;
+
+    top:30px;
+
+}
+.liu{
+    position: absolute;
+    top:44px;
+    left: 251px;
+}
+.jin{
+    position: absolute;
+    bottom:24px;
+    left: 81px
+}
+.gao{
+    position: absolute;
+   bottom: 24px;
+    left: 435px
+}
+.img_bag{
+    width: 100%;
+}
+.heima{
+    position: absolute;
+    top:155px;
+    left: 588px;
+}
+.tet_1{
+    width: 380px;
+    height: 530px;
+    background: #fff;
+    position: relative;
+    float: left;
+}
+.bag{
+    width: 100%;
+    background-color:#18191b;
+    overflow: hidden;
+    margin-top: -6px;
+    /*margin: 0 auto;*/
+}
+.bag .tet_1  .tet_img1{
+    margin-top: -17px;
+}
+.bag .tet_1  span{
+    width: 340px;
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 8px;
+    padding: 5px;
+
+
+}
+.bag .tet_1 h3{
+    color:red;
+    margin:15px 0px 0px 10px;
+
+}
+.bag .tet_1 p{
+    color: #1a1a1c;
+    font-weight: bold;
+    padding: 18px;
+
+}
+.right{
+    width: 590px;
+    height: 530px;
+    background: url("../images/right.gif");
+    float: left;
+    margin-left: 58px;
+    position: relative;
+
+}
+.posi{
+    margin: 20px 0px 0px 25px;
+}
+.txt{
+    float: left;
+    width: 250px;
+    font-size: 18px;
+    padding-left: 5px;
+    height: 40px;
+    margin-left: 55px;
+    margin-top: 25px;
+}
+.btn_1{
+    float: left;
+    margin-top: 22px;
+    margin-left: 10px;
+}
+.btn_1:hover{
+    cursor:pointer;
+}
+.wenz{
+    clear:both;
+    color: yellow;
+    font-size: 14px;
+    text-align: center;
+}
+.houqu{
+    width: 480px;
+    height: 40px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 13px;
+    position: relative;
+
+}
+.hq{
+    margin-top: 4px;
+}
+/********/
+
+.demo1{
+    position: absolute;
+    top:-6px;
+}
+.mulitline{
+    height: 18px;
+    font-size: 16px;
+    overflow: hidden;
+   margin-top: 17px;
+}
+.tab_bag{
+    width:100% ;
+        overflow: hidden;
+    position: absolute;
+   background: #18191b;
+}
+.tab_bag1{
+    width: 1030px;
+    height: 170px;
+    background: #3a3b3d;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    padding-top: 25px;
+}
+
+table{
+   border:1px solid #fff;
+    width: 1000px;
+    height: 140px;
+    margin: 0 auto;
+
+
+}
+table tr th{
+    color:red;
+    border:1px solid #fff;
+
+
+
+}
+table tr td{
+    border:1px solid #fff;
+    text-align: center;
+    color: #fff;
+}
+
+.mulitline{
+    margin-left:125px;
+
+}
+.sub{
+    position:absolute;
+    right: 61px;
+     margin-top: 17px;
+    width: 191px;
+    height: 50px;
+    opacity:0;
+}
+.sub:hover{
+    cursor:pointer;
+}
+#alert{
+    position: absolute;
+    left: 37%;
+    top: 36%;
+    z-index: 600;
+}
+.alert_img2{
+   position: absolute;
+    left:30%;
+    top:74%;
+}
+.alert_img2:hover{
+    cursor:pointer;
+
+}
+.alert_img3{
+    position: absolute;
+    left:93%;
+    top:0%;
+}
+.alert_img3:hover{
+    cursor:pointer
+}
+form{
+    margin-top: -9px;
+}
+.bot_img img{
+    margin-bottom:-3px;
+}
+
+
+@media screen and ( min-width: 1920px){
+    .tet_1{
+        margin-left:418px;
+    }
+    .right{
+        margin-left:100px;
+    }
+    .tab_bag1{
+        margin-left:418px;
+        width:1070px;
+
+    }
+    .bot_img img{
+        width:100%;
+    }
+    .logo{
+        margin-left:235px;
+    }
+    .liu{
+        margin-left:253px;
+        margin-top:70px;
+    }
+    .heima{
+        margin-left:200px;
+        margin-top:89px;
+        width:300px;
+        height:65px;
+    }
+    .jin{
+        margin-top:100px;
+        margin-left:233px;
+    }
+    .gao{
+        margin-top:100px;
+        margin-left:275px;
+    }
+}
+.body_cencer{
+    width:1030px;
+   overflow: hidden;
+
+    margin:  0 auto;
+
+}
+.img1{
+    position: absolute;
+    top:20px;
+    left: 50%;
+    margin-left: -515px;
+    width: 1030px;
+    height: 268px;
+   
+
+}
+

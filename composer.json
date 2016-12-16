@@ -1,0 +1,8 @@
+{
+    "require": {
+        "twig/twig": "^1.28",
+        "noahbuscher/macaw": "dev-master",
+        "illuminate/database": "^5.3",
+        "illuminate/events": "^5.3"
+    }
+}
