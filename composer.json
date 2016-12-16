@@ -1,7 +1,7 @@
 {
     "name": "zhuhaoyi/my-framwork",
     "type": "framwork",
-    "description": "private package",
+    "description": "通过组件实现的小框架",
     "keywords": ["framwork"],
     "homepage": "http://zhuhaoyi.com",
     "license": "GUN",
