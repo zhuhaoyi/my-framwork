@@ -1,4 +1,18 @@
 {
+    "name": "zhuhaoyi/my-framwork",
+    "type": "framwork",
+    "description": "private package",
+    "keywords": ["framwork"],
+    "homepage": "http://zhuhaoyi.com",
+    "license": "GUN",
+    "authors": [
+        {
+            "name": "zhuhaoyi",
+            "email": "zhuhaoyi@163.com",
+            "homepage": "http://zhuhaoyi.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "twig/twig": "^1.28",
         "noahbuscher/macaw": "dev-master",
