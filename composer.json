@@ -15,7 +15,7 @@
     ],
     "require": {
         "twig/twig": "^1.28",
-        "noahbuscher/macaw": "*",
+
         "illuminate/database": "^5.3",
         "illuminate/events": "^5.3"
     }
